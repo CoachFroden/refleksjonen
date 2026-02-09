@@ -1,0 +1,22 @@
+{
+  "name": "Refleksjon",
+  "short_name": "Refleksjon",
+  "description": "Personlig refleksjonsside for spillere. Kun synlig for deg og trener.",
+  "start_url": "./spiller-refleksjon.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

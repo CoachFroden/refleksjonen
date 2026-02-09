@@ -1,0 +1,309 @@
+
+    :root{
+      --bg1:#0f172a;
+      --bg2:#020617;
+      --card:#111827;
+      --card2:#0b1220;
+      --muted:#cbd5f5;
+      --text:#e5e7eb;
+      --border:#1f2a44;
+      --accent:#facc15;
+      --btn:#2c7be5;
+      --danger:#ef4444;
+      --ok:#22c55e;
+    }
+
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+      background:linear-gradient(180deg,var(--bg1),var(--bg2));
+      color:var(--text);
+      min-height:100vh;
+	  outline: 3px solid red;
+    }
+
+    .container{
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px 18px 44px;
+    }
+
+    .header{
+      text-align:center;
+      margin-bottom: 18px;
+    }
+
+    .header .icon{ font-size:2.2rem; margin-bottom:6px; }
+    h1{ margin:0 0 8px; font-size:1.8rem; }
+    .intro{
+      margin:0 auto;
+      max-width: 56ch;
+      color: var(--muted);
+      line-height:1.45;
+      font-size: 1rem;
+    }
+
+    .grid{
+      display:grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .card{
+      background: rgba(17,24,39,0.92);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+    }
+
+    .card h2{
+      margin:0 0 10px;
+      font-size: 1.1rem;
+      color: var(--accent);
+      letter-spacing:0.2px;
+    }
+
+    .row{
+      display:grid;
+      gap: 10px;
+    }
+
+    label{
+      display:block;
+      font-size: 0.95rem;
+      color: var(--text);
+      margin: 10px 0 6px;
+    }
+
+    .hint{
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 6px;
+      line-height: 1.4;
+    }
+
+    input[type="text"], textarea, select{
+      width:100%;
+      padding: 12px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(2,6,23,0.7);
+      color: var(--text);
+      outline: none;
+    }
+
+    textarea{ min-height: 84px; resize: vertical; }
+
+    .inline{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      flex-wrap: wrap;
+    }
+
+    .pill{
+      padding: 6px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(2,6,23,0.55);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .btns{
+      display:flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    button{
+      appearance:none;
+      border: none;
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      background: var(--btn);
+      color: #fff;
+    }
+
+    button.secondary{
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    button.danger{
+      background: var(--danger);
+      color: #fff;
+    }
+
+    button:disabled{
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .status{
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+
+    .status.ok{ color: #bbf7d0; }
+    .status.warn{ color: #fde68a; }
+
+    .history-item{
+      padding: 12px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: rgba(2,6,23,0.55);
+      margin-top: 10px;
+    }
+
+    .history-top{
+      display:flex;
+      justify-content: space-between;
+      align-items:flex-start;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .history-title{
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .history-meta{
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .kv{
+      margin-top: 8px;
+      display:grid;
+      gap: 6px;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .kv span.key{
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .footer-note{
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.45;
+      text-align:center;
+    }
+
+    .divider{
+      height:1px;
+      background: var(--border);
+      margin: 12px 0;
+      opacity: 0.8;
+    }
+	
+.logged-in-user {
+  position: static;              /* 🔑 VIKTIG */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 0.95rem;
+  color: var(--text);
+
+  background: rgba(2,6,23,0.55);
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  backdrop-filter: blur(6px);
+}
+
+.season-card .card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.season-card .card-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* Felles pill-stil (brukernavn + logg ut) */
+.pill-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 0.95rem;
+  color: var(--text);
+
+  background: rgba(2,6,23,0.55);
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  backdrop-filter: blur(6px);
+
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.pill-button:hover {
+  background: rgba(2,6,23,0.7);
+  border-color: rgba(255,255,255,0.25);
+}
+/* Login / auth layout */
+#authBox .card,
+#authBox {
+  padding: 24px 28px;
+}
+
+#authBox input {
+  margin-right: 10px;
+}
+
+/* Avstand mellom rader */
+#authBox .row,
+#authBox .login-row {
+  display: flex;
+  gap: 14px;           /* 🔑 juster her hvis du vil ha mer/mindre */
+  align-items: center;
+}
+
+/* Litt luft under input-raden */
+#authBox .login-row {
+  margin-bottom: 18px;
+}
+#loginBtn,
+#showRegisterBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background: rgba(2,6,23,0.55);
+  color: var(--text);
+
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  backdrop-filter: blur(6px);
+}
+#authBox input {
+  height: 30px;
+  border: 1px;
+  border-radius: 8px;
+}
+
+#authBox p {
+  margin-top: 16px;
+}
